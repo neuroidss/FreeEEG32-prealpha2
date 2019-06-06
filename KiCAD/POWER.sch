@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 17
+Sheet 12 18
 Title ""
 Date ""
 Rev ""
@@ -59,9 +59,9 @@ F 3 "~" H 5100 2850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text HLabel 5350 4650 3    50   Input ~ 0
-3
+3_OUT1A2B_DIODES
 Text HLabel 5550 4650 3    50   Input ~ 0
-4
+4_OUT1B2A
 $Comp
 L Device:C_Small C?
 U 1 1 5CDCDA82
@@ -109,9 +109,9 @@ Wire Wire Line
 	5550 4550 5550 4200
 Connection ~ 5550 4550
 Text HLabel 2600 4000 3    50   Input ~ 0
-1
+1_GND
 Text HLabel 2800 4000 3    50   Input ~ 0
-2
+2_VCC
 $Comp
 L Device:C_Small C?
 U 1 1 5CDCDB92
@@ -137,14 +137,14 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 5CDCDD1E
-P 5000 1900
+P 5750 1900
 AR Path="/5CDAD75F/5CDCDD1E" Ref="J?"  Part="1" 
 AR Path="/5CDCD748/5CDCDD1E" Ref="J36"  Part="1" 
-F 0 "J36" H 5080 1892 50  0000 L CNN
-F 1 "Conn_01x02" H 5080 1801 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5000 1900 50  0001 C CNN
-F 3 "~" H 5000 1900 50  0001 C CNN
-	1    5000 1900
+F 0 "J36" H 5830 1892 50  0000 L CNN
+F 1 "Conn_01x02" H 5830 1801 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5750 1900 50  0001 C CNN
+F 3 "~" H 5750 1900 50  0001 C CNN
+	1    5750 1900
 	1    0    0    1   
 $EndComp
 $Comp
@@ -161,31 +161,31 @@ F 3 "~" H 3900 1800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text HLabel 4200 1900 2    50   Input ~ 0
-2
+2_VCC
 Text HLabel 4200 1800 2    50   Input ~ 0
-1
+1_GND
 Wire Wire Line
 	4200 1900 4100 1900
 Wire Wire Line
 	4200 1800 4100 1800
-Text HLabel 4700 1900 0    50   Input ~ 0
-3
+Text HLabel 5450 1900 0    50   Input ~ 0
+3_OUT1A2B_DIODES
 Wire Wire Line
-	4700 1900 4800 1900
-Text HLabel 4700 1800 0    50   Input ~ 0
-4
+	5450 1900 5550 1900
+Text HLabel 5450 1800 0    50   Input ~ 0
+4_OUT1B2A
 Wire Wire Line
-	4700 1800 4800 1800
+	5450 1800 5550 1800
 Text HLabel 2650 3150 0    50   Input ~ 0
-1
+1_GND
 Text HLabel 2650 3250 0    50   Input ~ 0
-2
+2_VCC
 Wire Wire Line
 	2650 3150 2750 3150
 Wire Wire Line
 	2650 3250 2750 3250
 Text HLabel 3650 3250 2    50   Input ~ 0
-2
+2_VCC
 Wire Wire Line
 	3650 3250 3550 3250
 Wire Wire Line
@@ -215,24 +215,24 @@ Wire Wire Line
 	4900 3150 4900 3250
 Wire Wire Line
 	4900 3350 4800 3350
-Text HLabel 5400 3250 2    50   Input ~ 0
-3
+Text HLabel 5700 3250 2    50   Input ~ 0
+3_OUT1A2B_DIODES
 Text HLabel 5000 3250 2    50   Input ~ 0
-4
+4_OUT1B2A
 Wire Wire Line
 	4900 3250 5000 3250
 Connection ~ 4900 3250
 Wire Wire Line
 	4900 3250 4900 3350
 Wire Wire Line
-	5250 2850 5350 2850
+	5650 3250 5700 3250
+Connection ~ 5650 3250
 Wire Wire Line
-	5350 3250 5400 3250
+	5650 3250 5650 3650
 Wire Wire Line
-	5350 3650 5250 3650
-Connection ~ 5350 3250
+	5650 2850 5650 3250
 Wire Wire Line
-	5350 3250 5350 3650
+	5250 2850 5650 2850
 Wire Wire Line
-	5350 2850 5350 3250
+	5250 3650 5650 3650
 $EndSCHEMATC
